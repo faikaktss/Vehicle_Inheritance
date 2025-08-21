@@ -42,3 +42,17 @@ Amaç, **kalıtımın mantığını** anlamak ve gerçek bir senaryoda nasıl ku
 ✔️ Kamyon ve Motorsiklet → Arac sınıfından türetilmiştir
 ✔️ Override edilmiş metodlar: AracBilgileri() ve trafikCezaOde()
 ✔️ Konsol tabanlı menü ile kullanıcı etkileşimi
+
+
+🎯 Öğrenme Çıktısı
+
+✅ Inheritance (Kalıtım) mantığını pekiştirme
+
+✅ super anahtar kelimesi ile üst sınıfa erişim
+
+✅ Metotların override edilmesi
+
+✅ Konsol tabanlı basit bir OOP senaryosu
+
+💡 Not: Bu proje akademik/öğrenim amaçlıdır.
+Gerçek hayattaki araç sistemleri için basitleştirilmiş bir örnek olarak düşünülmelidir.
