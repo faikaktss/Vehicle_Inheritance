@@ -1,83 +1,69 @@
-🚗 Araç Uygulaması (Inheritance Projesi)
+🚗 Vehicle Inheritance Demo (Java OOP)
 
 
 
 
 
 
-📖 Proje Hakkında
+📌 Proje Hakkında
 
-Bu proje, Java OOP (Nesne Yönelimli Programlama) konseptlerinden inheritance (kalıtım) konusunu basit düzeyde anlatmak için hazırlanmıştır.
+Bu proje, Java’da Nesne Yönelimli Programlama (OOP) konusunu öğrenmek için geliştirilmiş basit bir uygulamadır.
+Özellikle Inheritance (Kalıtım) konusuna odaklanır.
 
-Amaç, farklı araç türleri (Kamyon 🚛, Motorsiklet 🏍️) oluşturup bunların ortak özelliklerini Arac sınıfında toplamak ve alt sınıflarda özelleştirmektir.
+Projede temel olarak Arac (üst sınıf) tanımlanmış ve bu sınıftan türeyen Kamyon ve Motorsiklet sınıfları oluşturulmuştur.
+Amaç, kalıtımın mantığını anlamak ve gerçek bir senaryoda nasıl kullanılabileceğini göstermektir.
 
-Bu sayede:
+🛠 Kullanılan Teknolojiler
 
-Kod tekrarını azaltma
+Java 17+
 
-Ortak özellikleri bir üst sınıfta toplama
+OOP (Inheritance, Override, Encapsulation)
 
-Alt sınıflarda (Kamyon, Motorsiklet) ek özellikler tanımlama
-mantığını öğrenmiş olacaksınız.
+Console tabanlı etkileşim
 
-🏗️ Proje Yapısı
-src/
- ├── Classlar/
- │   ├── Arac.java          # Üst sınıf (Parent class)
- │   ├── Kamyon.java        # Alt sınıf (Truck - extends Arac)
- │   └── Motorsiklet.java   # Alt sınıf (Motorcycle - extends Arac)
- └── Main.java              # Çalıştırılabilir main dosyası
+📂 Proje Yapısı
+📦 src
+ ┣ 📂 Classlar
+ ┃ ┣ 📜 Arac.java
+ ┃ ┣ 📜 Kamyon.java
+ ┃ ┗ 📜 Motorsiklet.java
+ ┣ 📜 Main.java
 
-📌 Kullanılan Sınıflar
-🔹 Arac (Base Class / Superclass)
+🔑 Öne Çıkan Özellikler
 
-id, aracIsmi, renk, fiyat, lastikSayisi, marka, modelYili gibi ortak özellikleri içerir.
+Arac sınıfı:
 
-AracBilgileri() ve trafikCezaOde() metotlarını tanımlar.
+Tüm araçlar için ortak özellikleri içerir (id, isim, renk, fiyat, lastik sayısı, marka, model yılı).
 
-🔹 Kamyon (Subclass 🚛)
+Kamyon ve Motorsiklet sınıfları:
 
-trafikCezaTutari özelliği vardır.
+Arac sınıfından kalıtım alır.
 
-AracBilgileri() metodunu override ederek kendi bilgilerini gösterir.
+Kendilerine özgü trafik ceza tutarı eklenmiştir.
 
-trafikCezaOde() metodunu özelleştirir.
+Override metodları:
 
-🔹 Motorsiklet (Subclass 🏍️)
+AracBilgileri() ve trafikCezaOde() metotları alt sınıflarda özelleştirilmiştir.
 
-trafikCezaTutari özelliği vardır.
+Kullanıcı etkileşimi:
 
-AracBilgileri() metodunu override eder.
+Konsol üzerinden seçim yaparak araç bilgilerini görüntüleyebilir veya trafik cezasını ödeyebilirsiniz.
 
-trafikCezaOde() metodunu özelleştirir.
-
-💻 Nasıl Çalıştırılır?
+▶️ Kullanım
 
 Projeyi klonla:
 
-git clone https://github.com/kullaniciadi/arac-inheritance-projesi.git
-cd arac-inheritance-projesi
+git clone https://github.com/kullanici-adi/vehicle-inheritance-demo.git
+cd vehicle-inheritance-demo
 
 
-Derle ve çalıştır:
-
-javac -d bin src/Classlar/*.java src/Main.java
-java -cp bin Main
 
 
-Uygulama çalıştığında:
+🎯 Öğrenme Çıktısı
 
-Araç uygulamasına hoşgeldiniz
-Lütfen bir seçim yapınız:
-1- Kamyon
-2- Motorsiklet
+✅ Inheritance (Kalıtım) mantığını pekiştirme
+✅ super anahtar kelimesi ile üst sınıfa erişim
+✅ Metotların override edilmesi
+✅ Konsol tabanlı basit bir OOP senaryosu
 
-
-Seçim yaparak bilgileri görebilir veya trafik cezası ödeyebilirsiniz.
-
-🎯 Öğrenme Çıktıları
-
-✅ Inheritance (Kalıtım) mantığını öğrenmek
-✅ Kod tekrarını azaltmak için üst sınıf kullanmak
-✅ super anahtar kelimesinin kullanımını görmek
-✅ Override ile metotları özelleştirmek
+💡 Not: Bu proje akademik/öğrenim amaçlıdır. Gerçek hayattaki araç sistemleri için basitleştirilmiş bir örnek olarak düşünülmelidir.
